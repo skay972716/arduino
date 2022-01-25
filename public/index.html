@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Automatizacion de Temperatura</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column is-two-thirds tittle-main">
+          <section class="section">
+            <div class="container">
+              <h1 class="title">Automatización de Procesos</h1>
+              <p class="subtitle">Arduino <strong>Node JS</strong></p>
+            </div>
+          </section>
+        </div>
+        <div class="column"></div>
+      </div>
+      <div class="columns">
+        <div class="notification is-link" style="text-align: center">
+          El proyecto tiene dos led's, un ventilador, un zumbador y un arduino
+          el cual cual regula la temperatura en tiempo real, este proyecto tiene
+          la finalidad de <strong>regularizar a la temperatura</strong> ambiente
+          cuando esta sobrepase los 19º.
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-half">
+          <canvas id="myChart" width="200" height="200"></canvas>
+        </div>
+        <div class="column">
+          <div class="columns column-temperature">
+            <div class="tags are-large">
+              <span id="temperature" class="tag date-temperature"></span>
+            </div>
+          </div>
+          <div class="columns column-notification">
+            <span id="alerta" class="tag">Esperando datos</span>
+          </div>
+          <div class="columns btnActions">
+            <button id="btnIA" class="button is-warning is-hovered">
+              Activar IA
+            </button>
+            <a class="button is-warning is-hovered" href="http://localhost:3000/subscription/subscription.html">¡Suscribirse!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./brain-browser.js"></script>
+    <script src="socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="./main.js" charset="utf-8"></script>
+    <script src="./training-data.js" charset="utf-8"></script>
+    <script src="./redNeuronal.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.tittle-main {
+  text-align: center;
+}
+.column-temperature {
+  margin-top: 50px;
+  justify-content: center;
+}
+.column-notification {
+  margin-top: 30px;
+  justify-content: center;
+}
+#alerta {
+  font-size: 2rem !important;
+}
+.date-temperature {
+  font-size: 4rem !important;
+}
+.btnActions {
+		justify-content:space-evenly;
+		margin-top:150px;
+}
